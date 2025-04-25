@@ -1,0 +1,29 @@
+.dashboard-home {
+    margin-top: 20px;
+    flex: 1;
+    height: fit-content;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.dashboard-home h2 {
+    color: #232f3e;
+}
+.quick-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.quick-links a {
+    padding: 10px 20px;
+    background-color: #b0b435;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.quick-links a:hover {
+    background-color: black;
+}

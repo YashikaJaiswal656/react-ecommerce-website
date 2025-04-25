@@ -1,0 +1,17 @@
+.bottom{
+    background-color: #333333;
+    text-align: center;
+    padding: 15px;
+}
+
+  
+  .bottom p {
+    margin: 0;
+    color: #bbb;
+  }
+  
+  .bottom a {
+    color:  #b0b435;
+    text-decoration: none;
+  }
+  

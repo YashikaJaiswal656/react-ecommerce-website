@@ -1,0 +1,86 @@
+.contact_container{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+.contact_cont{
+    height: fit-content;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+.contact_add{
+    height: fit-content;
+    width: 400px;
+    padding: 20px;
+    background-size: cover;
+    background-image: url("https://themewagon.github.io/freshshop/images/contact-bg.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.contact_add h2,.contact_formm h2{
+    font-size: 22px;
+    font-weight: 700;
+}
+.contact_add p ,.contact_formm p{
+    font-size: 13px;
+    font-weight: 100;
+    color: rgb(94, 93, 93);
+    line-height: 2;
+    font-family: sans-serif;
+
+}
+li{
+    list-style: none;
+}
+.contact_add ul li p,.contact_add ul li p a{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.733);
+    font-weight: 100;
+    text-decoration: none;
+}
+.contact_add ul li p i{
+    color: #b0b435;
+}
+.contact_formm{
+    margin-right: 50px;
+}
+.contact_formm input{
+    width: 100%;
+    height: 38px;
+    border: 1px solid rgb(211, 211, 211);
+    margin-bottom: 20px;
+}
+.contact_formm textarea{
+    width: 100%;
+    height: 100px;
+    border: 1px solid rgb(211, 211, 211);
+}
+.contact_formm .btn_3::after{
+    top: -40%;
+}
+
+  
+@media only screen and (max-width: 600px) {
+    .contact_cont{
+        flex-direction: column;
+    }
+    .contact_add{
+        width: 300px;
+    }
+    .contact_formm{
+        margin-right: 0;
+    }
+  }
+  @media only screen and (max-width:400px) {
+    .contact_add{
+        width: 240px;
+    }
+    
+  }
+  

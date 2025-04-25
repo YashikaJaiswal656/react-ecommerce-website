@@ -1,0 +1,138 @@
+.detail_cont{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-image: url("https://themewagon.github.io/freshshop/images/all-bg-title.jpg");
+background-attachment: fixed;
+}
+.detail_back{
+    background-color: rgba(0, 0, 0, 0.384);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.detail_back h1{
+    color: white;
+}
+.detail_back button{
+    border: 0px;
+
+}
+.detail_back button:hover{
+    background-color: #b0b435;
+}
+.detail_container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+.half_detail{
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+.detail_img{
+    height: 500px;
+    width: 400px;
+    margin-right: 20px;
+}
+.detail_img img{
+    height: 400px;
+    width: 400px;
+    background-size: cover;
+}
+.single-product-details{
+    height: fit-content;
+    width: 640px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+}
+.single-product-details h2{
+    color: #1f1f1f;
+}
+h5 del {
+    color: #666;
+    font-size: 13px;
+}
+.single-product-details h5{
+    font-size: 18px;
+    font-weight: 700;
+    color: #b0b435;
+    
+}
+.single-product-details p span,.single-product-details p{
+    font-size: 15px;
+    color: gray;
+    font-weight: 100;
+    line-height: 25px;
+    word-spacing: 1px;
+}
+.single-product-details a{
+    font-size: 16px;
+    color: #b0b435;
+    text-decoration: none;
+}
+.single-product-details h4{
+    color: #1f1f1f;
+    font-size: 18px;
+    font-weight: 700;
+}
+.single-product-details .btn_3{
+    border: 0;
+    padding: 15px;
+    font-size: 16px;
+    margin-left: 2px;
+    border-radius: 0;
+    
+}
+.single-product-details .btn_3:hover{
+    background-color: #b0b435;
+}
+.char .btn_3:after{
+    top: -49%;
+
+}
+
+.add-to-btn{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.share-bar .btn_3:hover:after{
+    left: -23px;
+}
+@media only screen and (max-width: 840px) {
+    .half_detail{
+        flex-direction: column;
+        align-items:center ;
+        width: 100%;
+    }
+  }
+  @media only screen and (max-width: 660px) {
+    .single-product-details{
+        width: 100%;
+        
+    }
+    .detail_img{
+     margin: 0;       
+    }
+  }
+  @media only screen and (max-width: 410px) {
+    .detail_img{
+        height: 400px;
+        width: 300px;
+    }
+    .detail_img img{
+        height: 400px;
+        width: 300px;
+    }
+  }
+  

@@ -1,0 +1,236 @@
+
+.cart_cont{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.cart_container{
+  height: fit-content;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  
+
+}.cart_table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  background-color: white;
+  scroll-behavior: smooth;
+  
+}
+
+.cart_table thead {
+  background-color: #b0b435;
+  color: white;
+}
+
+.cart_table th, 
+.cart_table td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart_table th {
+  font-size: 18px;
+}
+
+.cart_table td {
+  font-size: 16px;
+}
+
+/* Product image styling */
+.cart_img {
+  width: 80px;
+  height: 80px;
+  
+}
+
+/* Quantity input styling */
+.quantity_input {
+  width: 50px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* Remove icon styling */
+.remove_icon {
+  color: rgb(19, 18, 18)(19, 18, 18);
+  cursor: pointer;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.remove_icon:hover {
+  color: darkred;
+}
+
+/* Checkout button styling */
+.btn_3 {
+  background-color: #b0b435;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  
+  font-size: 16px;
+  cursor: pointer;
+  
+}
+
+.btn_3:hover {
+  background-color: #8d902e;
+}
+.order_summary {
+  width: 340px;
+  height: 350px;
+  background-color: white;
+  margin-top: 30px;
+}
+.but{
+  background-color: black;
+  color: white;
+  padding: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-top: 20px;
+}
+.but:hover{
+  background-color: #98a32b;
+}
+.order_summary h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.summary_item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.summary_total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+  color: #b0b435;
+}
+
+/* Checkout Button */
+.shopping_box {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn_checkout {
+  background-color: #b0b435;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.btn_checkout:hover {
+  background-color: #98a32b;
+}
+.show{
+  height: 380px;
+  width: 100%;
+  background-image: url("https://themewagon.github.io/freshshop/images/ins-bg.jpg");
+  background-size: cover;
+}
+.show_cont{
+  background-color: rgba(0, 0, 0, 0.555);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.slide_show{
+  height: 80%;
+  width: 80%;
+  display: flex;
+  
+overflow-x: auto;
+scroll-behavior: smooth;
+}
+.slide_show::-webkit-scrollbar{
+  display: none;
+}
+.slide_show img{
+  height: 270px;
+  width: 270px;
+  background-size: cover;
+}
+
+
+.arrow_cont{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  font-size: 30px;
+  font-weight: 500;
+  z-index: +99;
+  color: rgb(255, 255, 255);
+cursor: pointer;
+
+}
+.arrow_cont:hover{
+  color: #98a32b;
+}
+.shopping_box a{
+  text-decoration: none;
+}
+@media only screen and (max-width: 700px) {
+  .cart_table th{
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .cart_table td{
+    font-size: 10px;
+  }
+  .cart_img{
+    height: 60px;
+    width: 60px;
+  }
+  
+}
+@media only screen and (max-width: 500px) {
+  .cart_container{
+    width: 100%;
+    align-items: center;
+  }
+  .cart_table td,.cart_table th{
+    padding: 10px;
+  }
+  
+}
+@media only screen and (max-width: 450px) {
+  
+  .cart_table td,.cart_table th{
+    padding: 7px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  
+  .cart_table td,.cart_table th{
+    padding: 4px;
+  }
+}
+

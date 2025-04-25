@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+.nav{
+    background-color: #000000;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.item ul li a{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-left: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: content;
+    text-decoration: none;
+}
+
+.item ul{
+    display: flex;
+    
+}
+.item ul li {
+    list-style: none;
+
+}
+.register button{
+    background-color: #b0b435;
+    border-radius: 0;
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+    border: 0px;
+    
+}
+.two_item ul a{
+    text-decoration: none;
+    color: #000000;
+}
+.two_nav{
+    height: 130px;
+    width: 100%;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.two_item ul{
+display: flex;
+height: 100%;
+align-items:center ;
+}
+.two_item ul li{
+    margin-left:40px;
+    list-style: none;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.side_two{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#f8f9fa ;
+    display: none;
+}
+.side_list{
+    height: 100%;
+    width: 80%;
+
+}
+.side_two ul{
+text-align: center;
+}
+.side_two ul li {
+    margin-bottom: 20px;
+    list-style: none;
+    padding: 0px 0px 5px 0px ;
+    box-shadow: 0px 2px 2px -1px rgba(78, 78, 78, 0.3);
+
+}
+.side_two ul a{
+    color: black;
+    text-decoration: none;
+}
+.two_nav i{
+    padding: 10px;
+    border: 2px solid #b0b435 ;
+    display: none;
+}
+@media only screen and (max-width: 800px) {
+    .two_item{
+        display: none;
+    }
+    .two_nav i{
+        display: block;
+    }
+    .side_two.showw {
+        display: flex;
+    }
+  }
+@media only screen and (max-width: 570px) {
+    .nav{
+        flex-direction: column;
+    }
+    .nav .item ul li a{
+        font-size: 12px;
+        display: contents;
+    }
+  }

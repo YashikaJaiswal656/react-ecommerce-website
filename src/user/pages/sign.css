@@ -1,0 +1,114 @@
+
+body{
+    background-color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.sign_lo{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.sign_lo img{
+    height: 40px;
+    width: 100px;
+}
+.sign_container{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign_form{
+    height: 400px;
+    width: 350px;
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign_sm{
+    height: 100%;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+.sign_form p{
+    font-size: 30px;
+}
+label{
+    font-weight: 700;
+    font-size: 14px;
+}
+input{
+    height: 27px;
+    width: 80%;
+}
+.sign_form span{
+    font-size: 13px;
+    font-weight: 400;
+}
+span a{
+    color: #007185;
+    text-decoration: underline;
+}
+.sign_form .at{
+    margin-top: 10px;
+font-weight: 500;
+font-size: 14px;
+color: #007185;
+
+}
+.question{
+    font-size: 12px;
+    color: grey;
+    text-align: center;
+}
+.acc{
+    
+margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+.acc button{
+    background-color: white;
+    border: 1px solid rgb(133, 133, 133);
+    width: 364px;
+height: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+  }
+  
+  .footer p {
+    margin: 5px 0;
+  }
+  
+  .footer a {
+    margin: 0 10px;
+    color: #0066c0;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+@media only screen and (max-width: 400px) {
+    
+    .sign_form{
+        width: 90%;
+    }
+  }
