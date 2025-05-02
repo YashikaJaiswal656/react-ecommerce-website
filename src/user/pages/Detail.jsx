@@ -14,7 +14,7 @@ function Detail() {
     useEffect(()=>{
         const product=async()=>{
             try{
-    const fetchproduct=await fetch(`http://localhost:3000/product/${id}`)
+    const fetchproduct=await fetch(`/product/${id}`)
     const data=await fetchproduct.json()
     setName(data)
             }
@@ -43,7 +43,7 @@ function Detail() {
                 <div className="half_detail">
 
                     <div className="detail_img">
-                        <img src={`http://localhost:3000/image/${name.pic}`}  />
+                        <img src={`/image/${name.pic}`}  />
                     </div>
                     <div className="single-product-details ">
                         <h2>{name.name}</h2>
