@@ -25,7 +25,7 @@ function Checkout() {
         
         const fetchpr = async () => {
             try {
-                const fetchproduct = await fetch("http://localhost:3000/checkout")
+                const fetchproduct = await fetch("/checkout")
                 const data = await fetchproduct.json()
                 setcheck(data[0])
             }
