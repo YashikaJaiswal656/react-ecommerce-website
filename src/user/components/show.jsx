@@ -27,7 +27,7 @@ const [name,setName]=useState([])
 useEffect(()=>{
     const product=async()=>{
         try{
-const fetchproduct=await fetch("http://localhost:3000/pr")
+const fetchproduct=await fetch("/pr")
 const data=await fetchproduct.json()
 setName(data)
         }
@@ -50,7 +50,7 @@ console.log("er")
         <div className="slide_show">
             {name.map((item,index)=>(
                 <Link to="/shop">
-            <img src={`http://localhost:3000/image/${item.pic}`}  /></Link>
+            <img src={`/image/${item.pic}`}  /></Link>
             ))}
         </div>
     </div>
