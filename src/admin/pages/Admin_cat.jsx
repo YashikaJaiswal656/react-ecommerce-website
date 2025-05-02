@@ -13,7 +13,7 @@ const Insert=({cat_insert})=> {
 const cat_submit=async (e) => {
   e.preventDefault()
   try{
-const url=await fetch("http://localhost:3000/insert",{
+const url=await fetch("/insert",{
   method:"POST",
   headers:{
     "content-type":"application/json"
