@@ -11,7 +11,7 @@ function Cat_card() {
     useEffect(()=>{
       const product=async()=>{
         try{
-  const fetchproduct=await fetch("http://localhost:3000/pr")
+  const fetchproduct=await fetch("/pr")
   const data=await fetchproduct.json();
   setName(data)
         }
@@ -33,7 +33,7 @@ function Cat_card() {
                 <p class="sale">Sale</p>
             </div>
             
-            <img src={`http://localhost:3000/image/${item.pic}`}  />
+            <img src={`/image/${item.pic}`}  />
             <div class="mask-icon">
                 <a class="cart" href="#">Add to Cart</a>
                 <ul>
