@@ -30,7 +30,7 @@ const [name,setName]=useState(null)
 useEffect(()=>{
     const product=async()=>{
         try{
-const fetchproduct=await fetch(`http://localhost:3000/product/${id}`)
+const fetchproduct=await fetch(`/product/${id}`)
 const data=await fetchproduct.json()
 setName(data)
         }
@@ -75,7 +75,7 @@ const total=document.querySelector(".cart_total").innerHTML
 const name=document.querySelector(".name_pr").innerHTML
 
 try{
-    const res=await fetch("http://localhost:3000/checkout",{
+    const res=await fetch("/checkout",{
         method:"POST",
         headers:{
             "content-type":"application/json"
@@ -126,7 +126,7 @@ console.log("er")
                             {name&&(
                             <tr>
                                 <td>
-                                    <img src={`http://localhost:3000/image/${name.pic}`} alt="Product" className="cart_img" />
+                                    <img src={`/image/${name.pic}`} alt="Product" className="cart_img" />
                                 </td>
                                 <td className="name_pr">{name.name}</td>
                                 <td className="amt_price">{name.price}</td>
