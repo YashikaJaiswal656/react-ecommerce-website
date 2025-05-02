@@ -13,7 +13,7 @@ const About = () => {
     useEffect(() => {
         const product = async () => {
             try {
-                const fetchproduct = await fetch("http://localhost:3000/pr")
+                const fetchproduct = await fetch("/pr")
                 const data = await fetchproduct.json()
                 setName(data)
             }
@@ -33,7 +33,7 @@ const About = () => {
                     </p>
                     {name.map((item) => (
                        <div className="box">
-                         <img src={`http://localhost:3000/image/${item.pic}`} />
+                         <img src={`/image/${item.pic}`} />
                             <div className="text">
                                 <h2>Premium Product</h2>
 
