@@ -12,7 +12,7 @@ const [name,setName]=useState([])
 useEffect(()=>{
   const product=async()=>{
     try{
-const fetchproduct=await fetch("http://localhost:3000/pr")
+const fetchproduct=await fetch("/pr")
 const data=await fetchproduct.json()
 setName(data)
     }
