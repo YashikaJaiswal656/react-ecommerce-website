@@ -23,7 +23,7 @@ const Admin_edit = ({ onUserAdded  }) => {
 useEffect(()=>{
   const fetchproduct=async()=>{
 try{
-const res=await fetch(`http://localhost:3000/product/${id}`)
+const res=await fetch(`/product/${id}`)
 const data= await res.json()
 setName(data.name)
 setDescription(data.description)
@@ -31,7 +31,7 @@ setDetails(data.details)
 setRating(data.rating)
 setPrice(data.price)
 setCat(data.cat)
-setPic(`http://localhost:3000/image/${data.pic}`);
+setPic(`/image/${data.pic}`);
 }
 catch{
 console.log("er");
@@ -45,7 +45,7 @@ console.log("er");
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const res = await fetch("http://localhost:3000/categories");
+        const res = await fetch("/categories");
         const data = await res.json();
         setCategories(data);
       } catch (err) {
@@ -69,7 +69,7 @@ console.log("er");
     formdata.append('cat',cat)
 
     try {
-      const response = await fetch(`http://localhost:3000/update/${id}`, {
+      const response = await fetch(`/update/${id}`, {
         method: "PUT",
         body: formdata ,
         
