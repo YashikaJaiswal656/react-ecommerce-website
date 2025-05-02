@@ -23,7 +23,7 @@ const Add_product = ({ onUserAdded  }) => {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const res = await fetch("http://localhost:3000/categories");
+        const res = await fetch("/categories");
         const data = await res.json();
         setCategories(data);
       } catch (err) {
@@ -46,7 +46,7 @@ const Add_product = ({ onUserAdded  }) => {
     formdata.append('pic',pic)
     formdata.append('cat',cat)
     try {
-      const response = await fetch("http://localhost:3000/submit", {
+      const response = await fetch("/submit", {
         method: "POST",
         body: formdata ,
         
