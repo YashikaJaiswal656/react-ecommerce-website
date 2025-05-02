@@ -16,7 +16,7 @@ useEffect(()=>{
   
   try{
 
-    const fetchproduct=await fetch("http://localhost:3000/pr")
+    const fetchproduct=await fetch("/pr")
     const data=await fetchproduct.json()
     setName(data)
   }
@@ -29,7 +29,7 @@ product()
 },[])
 const funcdelete=async(id)=>{
   try{
-const del=await fetch(`http://localhost:3000/delete/${id}`,{
+const del=await fetch(`/delete/${id}`,{
   method:"DELETE",
 })
 if(del.ok){
