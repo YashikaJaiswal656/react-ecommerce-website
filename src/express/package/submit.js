@@ -7,7 +7,6 @@ import schema from "./schema.js";
 import cat_Schema from "./cat_schema.js";
 import Checkout from "./checkout_schema.js";
 import Log from "./log_schema.js";
-const PORT=3000
 const app=express();
 app.use(cors());
 const upload = multer({ dest: 'image/' });
@@ -56,7 +55,7 @@ console.log("error",error);
 app.get("/insert",async(req,res)=>{
   try{
 const cat=await cat_Schema.find()
-res.join(cat)
+res.json(cat)
 }
   catch{
    console.log("failed")
@@ -203,7 +202,23 @@ console.log("errr");
 
   }
 })
-  app.listen(PORT,()=>{
-    console.log("sucess")
-  })
+import path from "path";
+import { fileURLToPath } from "url";
+
+// These are needed to use __dirname with ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Serve static files from React
+app.use(express.static(path.join(__dirname, "client", "build")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
+
+  const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`✅ Server is running on port ${PORT}`);
+});
+
 
