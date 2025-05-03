@@ -2,9 +2,9 @@
   "name": "express",
   "version": "1.0.0",
   "description": "this is my express project or whatever",
-  "main": "index.js",
-  
+  "main": "submit.js",
   "scripts": {
+    "start": "node submit.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "yashika",
@@ -12,7 +12,6 @@
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^4.21.2",
-    
     "mongoose": "^8.13.0"
   }
 }
